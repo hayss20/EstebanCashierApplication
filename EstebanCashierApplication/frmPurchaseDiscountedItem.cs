@@ -42,5 +42,17 @@ namespace EstebanCashierApplication
             discountedItem.setPayment(Convert.ToDouble(Paymenttb.Text));
             Change.Text = discountedItem.getChange().ToString();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLoginAccount frmLoginAccount = new frmLoginAccount();
+            frmLoginAccount.ShowDialog();
+        }
+
+        private void exitApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
