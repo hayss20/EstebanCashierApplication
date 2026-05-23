@@ -204,7 +204,7 @@
             this.Controls.Add(this.Itemtb);
             this.Controls.Add(this.label1);
             this.Name = "frmPurchaseDiscountedItem";
-            this.Text = "Form1";
+            this.Text = "Purchase Discounted Item";
             this.Load += new System.EventHandler(this.frmPurchaseDiscountedItem_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

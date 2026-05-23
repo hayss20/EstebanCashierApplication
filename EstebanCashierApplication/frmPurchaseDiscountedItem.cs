@@ -28,7 +28,7 @@ namespace EstebanCashierApplication
             int quantity = Convert.ToInt32(Quantitytb.Text);
             double discount = Convert.ToDouble(Discounttb.Text);
             DiscountedItem discountedItem = new DiscountedItem(name, price, quantity, discount);
-            TotalAmount.Text = "Total Amount: " + discountedItem.getTotalPrice().ToString();
+            TotalAmount.Text = discountedItem.getTotalPrice().ToString();
         }
 
         private void Submitbtn_Click(object sender, EventArgs e)
@@ -38,9 +38,9 @@ namespace EstebanCashierApplication
             int quantity = Convert.ToInt32(Quantitytb.Text);
             double discount = Convert.ToDouble(Discounttb.Text);
             DiscountedItem discountedItem = new DiscountedItem(name, price, quantity, discount);
-            TotalAmount.Text = "Total Amount: " + discountedItem.getTotalPrice().ToString();
+            TotalAmount.Text =  discountedItem.getTotalPrice().ToString();
             discountedItem.setPayment(Convert.ToDouble(Paymenttb.Text));
-            Change.Text = "Change: " + discountedItem.getChange().ToString();
+            Change.Text = discountedItem.getChange().ToString();
         }
     }
 }
